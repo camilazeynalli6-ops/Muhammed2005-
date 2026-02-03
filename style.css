@@ -32,19 +32,40 @@ form {
 }
 @media (max-width: 600px) {
     .broider {
-        width: 90% !important; /* Ekranın 90%-ni tutsun */
-        border-width: 15px !important; /* Çərçivəni nazikləşdir */
-        padding: 20px !important; /* Daxili boşluğu azalt */
+        width: 90% !important; 
+        border-width: 15px !important; 
+        padding: 20px !important; 
     }
 
     h1 {
-        font-size: 1.2rem !important; /* Yazıları kiçilt */
+        font-size: 1.2rem !important; 
+    @media (max-width: 600px) {
+    
+    form {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;    
+        align-items: center;
+        justify-content: center;
+        gap: 5px;              }
+
+    label {
+        font-size: 14px;
+        margin: 0;
     }
 
     input[type="password"] {
-        width: 100% !important; /* Şifrə qutusu səliqəli görünsün */
-        margin-bottom: 10px;
+        width: 80px !important; 
+        padding: 5px !important;
+        margin: 0 !important;
     }
+
+    input[type="submit"] {
+        padding: 5px 10px !important;
+        margin: 0 !important;
+        cursor: pointer;
+    }
+}
 }
 form {
     margin: 2em;
@@ -304,3 +325,4 @@ body {
     margin: 0;
 
 }
+
