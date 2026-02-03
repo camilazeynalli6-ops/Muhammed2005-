@@ -21,6 +21,15 @@ body {
 form {
     font-size: 20px;
 }
+@media (max-width: 768px) {
+  .animasiya-klassi {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
 .broider {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACQUlEQVR4Xu2cQW4CMRAE4Wd5Gk/Lz8g1mEOpNb1mtVSuvW6Pyz0GLGXvN/+qBO5VN81uAi2HQKC7gT4fv8//c94fPy+bQHq53rod1U/6WhAmlAxJrxMoG1L9pAt0IUDASBfobqC0I1OdOvbs/lTf2xlKA6a6QMNPdQIuUIFGXxPjlp8mjMav+jTxbT+qR6BLB9KGCzT8miRQIvBpoOmZQy0QrvdGfqR/er7T/ZYnYKQLNGxJgYaRIWCkh9PVjxhs+fRMTRd0tuenGybQ8MihAAhUoJSRmb695WflXn903PLXRzJboUBn/N5GC1SgZQJlOxMq0DKBsp0JFWiZQNnOhAq0TKBsZ0J3A6XLAtLL9dbtqH7S14IwoWRIep1A2ZDqJ12g4f2nQMMEEzDS44SuA9IJwvV9/PHp+vAMFejrP2nQjgs0PFMFSgR2A6UzhfRwPdsfp/pJjz+UyJD07YTCCal+0gUatrhAz57QsL6vfzz+2vT1xACAQMsJEahAywTKdiZUoGUCZTsTKtAygbKdCRVomUDZzoTuBkq3LaSX663bUf2ke33n9V09lC+GlEDSTejuhNKOTHXK29n9qb74nSNkSLpAfc3Qsa8ZogSSbkLLr+EhoKs+3aC2H9UTn6EEhCak8W0AbT9an0DLHSjQo4GmLUIt0G7xs8+Ht020ANIFevBPMwJMG0Q6+R/dgSa0/Fp5BJruaJqQsz0/7QCBhkccBUCgAqWMzPTtLT8r9/qj45a/PpLZCgU64/c2WqBloH/P1MCCUTjo+QAAAABJRU5ErkJggg==") 28 / 28px / 0 round;
@@ -304,5 +313,6 @@ body {
     margin: 0;
 
 }
+
 
 
