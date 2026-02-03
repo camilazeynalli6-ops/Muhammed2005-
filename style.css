@@ -16,12 +16,12 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    overflow: hidden; /* Mobildə gradient-in kənardan çıxmasını qarşısını alır */
 }
 
 form {
     font-size: 20px;
 }
-
 
 .broider {
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACQUlEQVR4Xu2cQW4CMRAE4Wd5Gk/Lz8g1mEOpNb1mtVSuvW6Pyz0GLGXvN/+qBO5VN81uAi2HQKC7gT4fv8//c94fPy+bQHq53rod1U/6WhAmlAxJrxMoG1L9pAt0IUDASBfobqC0I1OdOvbs/lTf2xlKA6a6QMNPdQIuUIFGXxPjlp8mjMav+jTxbT+qR6BLB9KGCzT8miRQIvBpoOmZQy0QrvdGfqR/er7T/ZYnYKQLNGxJgYaRIWCkh9PVjxhs+fRMTRd0tuenGybQ8MihAAhUoJSRmb695WflXn903PLXRzJboUBn/N5GC1SgZQJlOxMq0DKBsp0JFWiZQNnOhAq0TKBsZ0J3A6XLAtLL9dbtqH7S14IwoWRIep1A2ZDqJ12g4f2nQMMEEzDS44SuA9IJwvV9/PHp+vAMFejrP2nQjgs0PFMFSgR2A6UzhfRwPdsfp/pJjz+UyJD07YTCCal+0gUatrhAz57QsL6vfzz+2vT1xACAQMsJEahAywTKdiZUoGUCZTsTKtAygbKdCRVomUDZzoTuBkq3LaSX663bUf2ke33n9V09lC+GlEDSTejuhNKOTHXK29n9qb74nSNkSLpAfc3Qsa8ZogSSbkLLr+EhoKs+3aC2H9UTn6EEhCak8W0AbT9an0DLHSjQo4GmLUIt0G7xs8+Ht020ANIFevBPMwJMG0Q6+R/dgSa0/Fp5BJruaJqQsz0/7QCBhkccBUCgAqWMzPTtLT8r9/qj45a/PpLZCgU64/c2WqBloH/P1MCCUTjo+QAAAABJRU5ErkJggg==") 28 / 28px / 0 round;
@@ -30,23 +30,35 @@ form {
     padding: 50px;
     width: 50%;
     max-width: 600px;
+    margin: 0 auto; /* Mərkəzləşdirmə üçün */
 }
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
     .broider {
-        width: 90% !important; 
-        border-width: 15px !important; 
-        padding: 20px !important; 
+        width: 90% !important;
+        border-width: 15px !important;
+        padding: 20px !important;
     }
 
     h1 {
-        font-size: 1.2rem !important; 
+        font-size: 1.2rem !important;
     }
 
     input[type="password"] {
-        width: 100% !important; 
+        width: 100% !important;
         margin-bottom: 10px;
     }
+
+    form {
+        font-size: 16px; /* Mobildə daha kiçik font */
+        margin: 1em; /* Azaldılmış margin */
+    }
+
+    body {
+        padding: 10px; /* Azaldılmış padding */
+    }
 }
+
 form {
     margin: 2em;
 }
@@ -66,6 +78,8 @@ p::first-letter {
 
 svg.mainheart {
     overflow: visible;
+    max-width: 100%; /* Responsivlik üçün */
+    height: auto;
 }
 
 svg path#line {
@@ -148,6 +162,7 @@ svg path#heart {
     width: 90%;
     position: relative;
     overflow: hidden;
+    margin: 0 auto; /* Mərkəzləşdirmə */
 }
 
 .heart-container {
@@ -175,6 +190,7 @@ svg path#heart {
     gap: 1rem;
     justify-content: center;
     margin: 1rem 0;
+    flex-wrap: wrap; /* Mobildə button-ların aşağı düşməsi üçün */
 }
 
 .btn {
@@ -186,6 +202,7 @@ svg path#heart {
     font-size: 1.1rem;
     cursor: pointer;
     transition: transform 0.3s, background 0.3s;
+    min-width: 120px; /* Minimum genişlik */
 }
 
 .btn:hover {
@@ -294,18 +311,24 @@ svg path#heart {
 }
 
 @media (max-width: 768px) {
-    .broider {
-        width: 90%;
+    .card {
+        padding: 1rem; /* Azaldılmış padding */
+    }
+
+    .message {
+        font-size: 1.2rem; /* Kiçik ekranlarda daha kiçik font */
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem; /* Azaldılmış padding */
+        font-size: 1rem;
+    }
+
+    .heart-container {
+        margin: 1rem 0; /* Azaldılmış margin */
+    }
+
+    svg.mainheart {
+        width: 80%; /* Mobildə daha kiçik */
     }
 }
-
-
-body {
-    padding: 0;
-    margin: 0;
-
-}
-
-
-
-
