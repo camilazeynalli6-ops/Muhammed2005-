@@ -39,33 +39,12 @@ form {
 
     h1 {
         font-size: 1.2rem !important; 
-    @media (max-width: 600px) {
-    
-    form {
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap;    
-        align-items: center;
-        justify-content: center;
-        gap: 5px;              }
-
-    label {
-        font-size: 14px;
-        margin: 0;
     }
 
     input[type="password"] {
-        width: 80px !important; 
-        padding: 5px !important;
-        margin: 0 !important;
+        width: 100% !important; 
+        margin-bottom: 10px;
     }
-
-    input[type="submit"] {
-        padding: 5px 10px !important;
-        margin: 0 !important;
-        cursor: pointer;
-    }
-}
 }
 form {
     margin: 2em;
@@ -325,4 +304,5 @@ body {
     margin: 0;
 
 }
+
 
