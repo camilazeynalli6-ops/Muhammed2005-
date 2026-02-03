@@ -330,5 +330,11 @@ svg path#heart {
 
     svg.mainheart {
         width: 80%; /* Mobildə daha kiçik */
+        height: auto;
+        transform: scale(1.5); /* Mobildə ürək döyüntülərini böyütmək üçün */
+    }
+
+    body {
+        overflow: hidden; /* Yuxarıdan mavi rəng çıxmasını qarşısını almaq üçün */
     }
 }
