@@ -329,9 +329,9 @@ svg path#heart {
     }
 
     svg.mainheart {
-        width: 80%; /* Mobildə daha kiçik */
+        width: 100%; /* Tam ekranda görünməsi üçün */
         height: auto;
-        transform: scale(1.5); /* Mobildə ürək döyüntülərini böyütmək üçün */
+        transform: scale(2); /* Mobildə ürək döyüntülərini böyütmək üçün, kənarları da görünən olsun */
     }
 
     body {
