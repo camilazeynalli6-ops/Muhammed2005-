@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 20px;
-    overflow: hidden; /* Mobildə gradient-in kənardan çıxmasını qarşısını alır */
+    overflow: hidden; 
 }
 
 form {
@@ -30,7 +30,7 @@ form {
     padding: 50px;
     width: 50%;
     max-width: 600px;
-    margin: 0 auto; /* Mərkəzləşdirmə üçün */
+    margin: 0 auto; 
 }
 
 @media (max-width: 768px) {
@@ -50,12 +50,12 @@ form {
     }
 
     form {
-        font-size: 16px; /* Mobildə daha kiçik font */
-        margin: 1em; /* Azaldılmış margin */
+        font-size: 16px; 
+        margin: 1em; 
     }
 
     body {
-        padding: 10px; /* Azaldılmış padding */
+        padding: 10px; 
     }
 }
 
@@ -78,7 +78,7 @@ p::first-letter {
 
 svg.mainheart {
     overflow: visible;
-    max-width: 100%; /* Responsivlik üçün */
+    max-width: 100%; 
     height: auto;
 }
 
@@ -162,7 +162,7 @@ svg path#heart {
     width: 90%;
     position: relative;
     overflow: hidden;
-    margin: 0 auto; /* Mərkəzləşdirmə */
+    margin: 0 auto; 
 }
 
 .heart-container {
@@ -190,7 +190,7 @@ svg path#heart {
     gap: 1rem;
     justify-content: center;
     margin: 1rem 0;
-    flex-wrap: wrap; /* Mobildə button-ların aşağı düşməsi üçün */
+    flex-wrap: wrap; 
 }
 
 .btn {
@@ -202,7 +202,7 @@ svg path#heart {
     font-size: 1.1rem;
     cursor: pointer;
     transition: transform 0.3s, background 0.3s;
-    min-width: 120px; /* Minimum genişlik */
+    min-width: 120px; 
 }
 
 .btn:hover {
@@ -312,29 +312,30 @@ svg path#heart {
 
 @media (max-width: 768px) {
     .card {
-        padding: 1rem; /* Azaldılmış padding */
+        padding: 1rem; 
     }
 
     .message {
-        font-size: 1.2rem; /* Kiçik ekranlarda daha kiçik font */
+        font-size: 1.2rem; 
     }
 
     .btn {
-        padding: 0.8rem 1.5rem; /* Azaldılmış padding */
+        padding: 0.8rem 1.5rem; 
         font-size: 1rem;
     }
 
     .heart-container {
-        margin: 1rem 0; /* Azaldılmış margin */
+        margin: 1rem 0; 
     }
 
     svg.mainheart {
-        width: 100%; /* Tam ekranda görünməsi üçün */
+        width: 100%; 
         height: auto;
-        transform: scale(2); /* Mobildə ürək döyüntülərini böyütmək üçün, kənarları da görünən olsun */
+        transform: scale(2); 
     }
 
     body {
-        overflow: hidden; /* Yuxarıdan mavi rəng çıxmasını qarşısını almaq üçün */
+        overflow: hidden; 
     }
 }
+
